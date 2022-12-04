@@ -1,0 +1,75 @@
+.tableContainer {
+  h1 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #182c62;
+  }
+  .tablewrapper {
+    font-size: 14px;
+    .tableHead {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      background-color: #e4edf2;
+      .tableHeadRow {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        .tableHeadRowData {
+          color: #4b5c68;
+        }
+      }
+    }
+    .tableBody {
+      .tableBodyRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        border-bottom: 2px solid #f6f7f7;
+        &:last-child td,
+        &:last-child th {
+          border: 0;
+        }
+        .tableBodyRowData {
+          .flagWithName {
+            display: flex;
+            justify-content: flex-start;
+            span {
+              margin-right: 12px;
+            }
+            .flagImg {
+              width: 60px;
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* "&:nth-of-type(odd)": {
+      backgroundColor: theme.palette.action.hover,
+    },
+    // hide last border
+    "&:last-child td, &:last-child th": {
+      border: 0,
+    },
+    [`&.${tableCellClasses.head}`]: {
+      backgroundColor: "#E4EDF2",
+      color: "#182C62",
+      fontSize: 14,
+    },
+    [`&.${tableCellClasses.body}`]: {
+      fontSize: 12,
+      color: "#4B5C68",
+    },
+  
+    const style = {
+      flagWrapper: {
+        display: "flex",
+        justifyContent: "space-evenly",
+        alignItems: "center",
+      },
+      flag: { width: "53px", height: "37px" },
+    }; */
